@@ -46,7 +46,7 @@ app.get( '/api/getkey', ( req, res ) => res.status( 200 ).json( { key: process.e
 app.use( errorMiddleware );
 
 // Connect to the database and start the server
-const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 connectDB().then( () =>
 {
     app.listen( PORT, () =>
