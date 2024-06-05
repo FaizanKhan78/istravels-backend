@@ -7,7 +7,7 @@ const adminRouter = require( './router/admin-router' );
 const connectDB = require( './utils/db' );
 const errorMiddleware = require( './middleware/error-middleware' );
 
-const allowedOrigins = [ 'http://localhost:5173' ];
+const allowedOrigins = [ 'http://localhost:5173', 'https://666032b286974fe5be82961b--flourishing-pika-02ecfd.netlify.app' ];
 
 const corsOptions = {
     origin: ( origin, callback ) =>
